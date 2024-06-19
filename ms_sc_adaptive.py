@@ -13,8 +13,8 @@ def calc_costgreedy(list_of_tasks,list_of_workers):
     costg = m*n + n*degt*(3*m + degw) + m*degt**2
     return costg
 
-def calc_costgdc():
-    return 3
+def calc_costgdc(n,degree,m,g):
+    return (m*g+n)(degree-1)
 
 
 def ms_sc_adaptive(list_of_workers,list_of_tasks):
